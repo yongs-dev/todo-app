@@ -6,7 +6,7 @@ function LoginComponent() {
     const navigate = useNavigate()
     const authContext = useAuth()
 
-    const [username, setUsername] = useState('Ethan')
+    const [username, setUsername] = useState('mark')
     const [password, setPassword] = useState('')
     const [showErrorMessage, setShowErrorMessage] = useState(false)
 
@@ -18,8 +18,8 @@ function LoginComponent() {
         setPassword(event.target.value)
     }
 
-    function handleSubmit() {
-        if (authContext.login(username, password)) {
+    async function handleSubmit() {
+        if (await authContext.login(username, password)) {
             navigate(`/welcome/${username}`)
         } else {
             setShowErrorMessage(true)

@@ -13,7 +13,7 @@ function HeaderComponent() {
                         <a className="navbar-brand ms-2 fs-2 fw-bold text-black" href="/">Gooooos</a>
                         <div className="collapse navbar-collapse">
                             <ul className="navbar-nav">
-                                <li className="nav-item fs-5">{isAuthenticated && <Link className="nav-link" to="/welcome/Ethan">Home</Link>}</li>
+                                <li className="nav-item fs-5">{isAuthenticated && <Link className="nav-link" to="/welcome/mark">Home</Link>}</li>
                                 <li className="nav-item fs-5">{isAuthenticated && <Link className="nav-link" to="/todos">Todos</Link>}</li>
                             </ul>
                         </div>
