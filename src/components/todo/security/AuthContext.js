@@ -38,7 +38,7 @@ export default function AuthProvider({children}) {
                 logout()
                 return false
             }
-        } catch (erorr) {
+        } catch (error) {
             logout()
             return false
         }
